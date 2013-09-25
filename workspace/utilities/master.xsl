@@ -23,7 +23,7 @@
   <head>
     <xsl:choose>
       <xsl:when test="$page-title = 'Home' or $page-title = 'Error'">
-        <title>Determine</title>
+        <title>NightWind Productions</title>
       </xsl:when>
       <xsl:otherwise>
         <title>
@@ -49,8 +49,8 @@
             </xsl:call-template>
             <xsl:text> | </xsl:text>
           </xsl:if>
-          <xsl:text>Determine | </xsl:text>
-          <xsl:value-of select="//data/page-data/entry/title" />
+          <xsl:text>NightWind Productions | </xsl:text>
+          <xsl:value-of select="/data/page-data/entry/title" />
         </title>
       </xsl:otherwise>
     </xsl:choose>
