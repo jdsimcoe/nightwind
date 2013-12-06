@@ -89,13 +89,21 @@
       </ul>
       <ul class="nav nav-pills pull-right hidden-xs">
         <xsl:apply-templates select="data/navigation-primary/page" />
-        <li>
-          <a href="https://squareup.com/market/insomnia-coffee-baseline" target="_blank">
+<!--         <li>
+          <a href="#" target="_blank">
             <strong>Store</strong>
             <small>shop our stuff</small>
           </a>
-        </li>
+        </li> -->
+        <xsl:if test="$cookie-username">
+          <li class="dropdown">
+            <a href="/symphony/">
+              <strong><i class="glyphicon glyphicon-wrench"></i></strong>
+            </a>
+          </li>
+        </xsl:if>
       </ul>
+
 
       <xsl:apply-templates select="data/page-data-single/entry" mode="quote" />
 
@@ -110,16 +118,14 @@
 
     <div class="about-bar">
       <div class="center">
-        <i class="icon-social-facebook icon-medium"></i>
-        <i class="glyphicon glyphicon-camera icon-medium"></i>
-        <i class="icon-social-twitter icon-medium"></i>
+        <i class="glyphicon glyphicon-globe icon-medium"></i>
       </div>
       <h4>On the Web</h4>
-      <p class="sub-lead">Stay up to date with Nightwind via social networks:</p>
+      <p class="lead"><em>The easiest way to stay up to date with Nightwind is via social networks. When you have a chance, check us out and stay “in the know”:</em></p>
       <p class="center links">
-        <a href="#" target="_blank">Facebook</a>
-        <a href="#" target="_blank">Instagram</a>
-        <a href="https://twitter.com/nightwindprodux" target="_blank">Twitter</a>
+        <a href="#" target="_blank"><i class="icon-social-facebook"></i> Facebook</a>
+        <a href="#" target="_blank"><i class="glyphicon glyphicon-camera"></i> Instagram</a>
+        <a href="https://twitter.com/nightwindprodux" target="_blank"><i class="icon-social-twitter"></i> Twitter</a>
       </p>
     </div>
 
@@ -129,6 +135,9 @@
 
         <div class="row copy">
           <div class="col-lg-12">
+            <div class="center">
+              <i class="icon-oregon icon-medium"></i>
+            </div>
             <p class="center">
               <xsl:choose>
                 <xsl:when test="$this-year = 2013">

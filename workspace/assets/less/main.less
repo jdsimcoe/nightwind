@@ -349,8 +349,12 @@ a {
   }
 }
 
-#main {
+#about #main {
   background-position: 50% 50%;
+}
+
+#main {
+  background-position: 50% 75%;
   background-size: 100%;
   height: auto;
   position: relative;
@@ -512,13 +516,20 @@ a {
 
 #content {
   padding: 0;
+} // #content
 
+.page-content {
+  margin-bottom: 50px;
+
+  h1,
+  h2,
   h3,
-  h4 {
+  h4,
+  h5,
+  h6 {
     margin-top: 30px;
   }
-
-} // #content
+}
 
 
 // Locations
@@ -646,6 +657,19 @@ a {
 // Horizons
 // -------------------------------------------------
 
+.page-bar {
+
+  // call Horizon
+  .horizon(@color-text: darken(@color-white, 30%); @color-background: darken(@color-white, 10%));
+
+  // overrides
+  clear: both;
+  margin-bottom: 2em;
+  padding: 1.5em 1em 1em 1em;
+
+
+}
+
 .about-bar {
 
   // call Horizon
@@ -677,16 +701,6 @@ a {
 
   // overrides
   clear: both;
-  padding-bottom: 0;
-
-  .btn-large {
-
-    &:hover {
-      background-color: lighten(@brand-primary, 10%);
-      border-color: lighten(@brand-primary, 10%);
-      color: @color-white;
-    }
-  }
 
 }
 

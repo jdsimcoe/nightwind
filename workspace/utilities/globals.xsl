@@ -27,11 +27,11 @@
 
 <xsl:template match="page-data-single/entry" mode="content">
 
-  <xsl:if test="string-length(content) &gt;= 0">
+  <xsl:value-of select="banner" disable-output-escaping="yes"/>
 
+  <div class="page-content container">
     <xsl:value-of select="content" disable-output-escaping="yes" />
-
-  </xsl:if>
+  </div>
 
 </xsl:template>
 

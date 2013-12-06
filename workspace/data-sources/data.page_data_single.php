@@ -25,6 +25,7 @@
 				'title',
 				'tagline-masthead: formatted',
 				'page',
+				'banner: formatted',
 				'content: formatted',
 				'image: caption',
 				'image: image'
@@ -41,10 +42,10 @@
 				'name' => 'Page Data: Single',
 				'author' => array(
 					'name' => 'Jonathan Simcoe',
-					'website' => 'http://insomnia.dev',
+					'website' => 'http://nightwind.dev',
 					'email' => 'jonathan@simko.io'),
 				'version' => 'Symphony 2.3.4',
-				'release-date' => '2013-11-27T00:54:44+00:00'
+				'release-date' => '2013-12-06T21:03:23+00:00'
 			);
 		}
 

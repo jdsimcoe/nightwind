@@ -183,23 +183,11 @@
                 </xsl:if>
                 <xsl:text>Suggestion</xsl:text>
               </option>
-              <option value="Coffee Question">
-                <xsl:if test="/data/events/contact-message/post-values/inquiry = 'Coffee Question'">
+              <option value="Store Issue/Help">
+                <xsl:if test="/data/events/contact-message/post-values/inquiry = 'Store Issue/Help'">
                   <xsl:attribute name="selected"></xsl:attribute>
                 </xsl:if>
-                <xsl:text>Coffee Question</xsl:text>
-              </option>
-              <option value="Dapper + Wise Roasters">
-                <xsl:if test="/data/events/contact-message/post-values/inquiry = 'Dapper + Wise Roasters'">
-                  <xsl:attribute name="selected"></xsl:attribute>
-                </xsl:if>
-                <xsl:text>Dapper + Wise Roasters</xsl:text>
-              </option>
-              <option value="Distribution/Sales">
-                <xsl:if test="/data/events/contact-message/post-values/inquiry = 'Distribution/Sales'">
-                  <xsl:attribute name="selected"></xsl:attribute>
-                </xsl:if>
-                <xsl:text>Distribution/Sales</xsl:text>
+                <xsl:text>Store Issue/Help</xsl:text>
               </option>
             </select>
           </div>
@@ -242,7 +230,7 @@
         <input name="send-email[reply-to-name]" value="fields[name]" type="hidden" />
         <input name="send-email[subject]" value="fields[inquiry]" type="hidden" />
         <input name="send-email[body]" value="fields[inquiry],fields[content],fields[email],fields[name]" type="hidden" />
-        <input name="send-email[recipient]" value="tyler" type="hidden" />
+        <input name="send-email[recipient]" value="jdsimcoe" type="hidden" />
 
         <div class="col-lg-4 col-lg-offset-4">
           <input class="btn btn-large btn-block btn-primary" name="action[contact-message]" type="submit" value="Submit Form" />

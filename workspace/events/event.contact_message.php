@@ -15,10 +15,10 @@
 				'name' => 'Contact Message',
 				'author' => array(
 					'name' => 'Jonathan Simcoe',
-					'website' => 'http://insomnia.dev',
+					'website' => 'http://nightwind.dev',
 					'email' => 'jonathan@simko.io'),
 				'version' => 'Symphony 2.3.4',
-				'release-date' => '2013-12-05T17:03:06+00:00',
+				'release-date' => '2013-12-06T20:28:44+00:00',
 				'trigger-condition' => 'action[contact-message]'
 			);
 		}
@@ -54,7 +54,7 @@
         <h3>Example Front-end Form Markup</h3>
         <p>This is an example of the form markup you can use on your frontend:</p>
         <pre class="XML"><code>&lt;form method="post" action="" enctype="multipart/form-data">
-  &lt;input name="MAX_FILE_SIZE" type="hidden" value="20971520" />
+  &lt;input name="MAX_FILE_SIZE" type="hidden" value="2097152" />
   &lt;label>Name
     &lt;input name="fields[name]" type="text" />
   &lt;/label>
@@ -69,9 +69,7 @@
       &lt;option value="Choose an option:">Choose an option:&lt;/option>
       &lt;option value="General Inquiry">General Inquiry&lt;/option>
       &lt;option value="Suggestion">Suggestion&lt;/option>
-      &lt;option value="Coffee Question">Coffee Question&lt;/option>
-      &lt;option value="Dapper + Wise Roasters">Dapper + Wise Roasters&lt;/option>
-      &lt;option value="Distribution/Sales">Distribution/Sales&lt;/option>
+      &lt;option value="Store Issue/Help">Store Issue/Help&lt;/option>
     &lt;/select>
   &lt;/label>
   &lt;label>Content
@@ -82,7 +80,7 @@
         <p>To edit an existing entry, include the entry ID value of the entry in the form. This is best as a hidden field like so:</p>
         <pre class="XML"><code>&lt;input name="id" type="hidden" value="23" /></code></pre>
         <p>To redirect to a different location upon a successful save, include the redirect location in the form. This is best as a hidden field like so, where the value is the URL to redirect to:</p>
-        <pre class="XML"><code>&lt;input name="redirect" type="hidden" value="http://insomnia.dev/success/" /></code></pre>
+        <pre class="XML"><code>&lt;input name="redirect" type="hidden" value="http://nightwind.dev/success/" /></code></pre>
         <h3>Send Notification Email</h3>
         <p>Upon the event successfully saving the entry, this option takes input from the form and send an email to the desired recipient. <strong>It currently does not work with ‘Allow Multiple’</strong>. The following are the recognised fields:</p>
         <pre class="XML"><code>send-email[sender-email] // Optional

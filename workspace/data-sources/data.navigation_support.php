@@ -26,10 +26,10 @@
 				'name' => 'Navigation: Support',
 				'author' => array(
 					'name' => 'Jonathan Simcoe',
-					'website' => 'http://saplings.dev',
+					'website' => 'http://nightwind.dev',
 					'email' => 'jonathan@simko.io'),
-				'version' => 'Symphony 2.3.3',
-				'release-date' => '2013-09-20T16:58:00+00:00'
+				'version' => 'Symphony 2.3.4',
+				'release-date' => '2013-12-06T21:03:42+00:00'
 			);
 		}
 

@@ -1,10 +1,9 @@
 .DS_Store
-.htaccess
-manifest/
-sql/
-install-log.txt
-install/logs/
 *.sublime-*
-workspace/bootstrap
-workspace/uploads/images
-workspace/grunt/node_modules
+workspace/uploads/images/*.jpg
+workspace/uploads/images/*.jpeg
+workspace/uploads/images/*.png
+workspace/uploads/images/*.gif
+manifest/cache/*
+manifest/logs/*
+manifest/tmp/*

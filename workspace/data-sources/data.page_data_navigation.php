@@ -33,10 +33,10 @@
 				'name' => 'Page Data: Navigation',
 				'author' => array(
 					'name' => 'Jonathan Simcoe',
-					'website' => 'http://insomnia.dev',
+					'website' => 'http://nightwind.dev',
 					'email' => 'jonathan@simko.io'),
 				'version' => 'Symphony 2.3.4',
-				'release-date' => '2013-11-04T21:17:03+00:00'
+				'release-date' => '2013-12-06T21:04:14+00:00'
 			);
 		}
 
