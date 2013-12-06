@@ -16,13 +16,12 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="/">
-          <h4>insomnia</h4>
-          <h5>
-            <span class="light">—</span>
-            <xsl:text>coffee co.</xsl:text>
-            <span class="light">—</span>
-          </h5>
+        <a class="navbar-brand" href="{$root}">
+          <i class="icon-wind"></i>
+          <div class="wordmark">
+            <h4>Nightwind</h4>
+            <h5>Productions</h5>
+          </div>
         </a>
       </div><!-- .navbar-header -->
 

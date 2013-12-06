@@ -78,7 +78,7 @@
 
       <ul class="nav nav-pills pull-left hidden-xs">
         <li class="pull-left">
-          <a class="navbar-brand solo" href="/">
+          <a class="navbar-brand solo" href="{$root}">
             <i class="icon-wind"></i>
             <div class="wordmark">
               <h4>Nightwind</h4>
@@ -152,7 +152,7 @@
               <xsl:text>.&#160;</xsl:text>
               <xsl:value-of select="$website-name"/>
               <xsl:text> All rights reserved.</xsl:text>
-              <xsl:text>&#160;&#160;•&#160;&#160;Designed &amp; coded by </xsl:text>
+              <xsl:text>&#160;&#160;•&#160;&#160;Design, branding &amp; code by </xsl:text>
               <a href="http://simko.io/"><strong>Simko.io</strong></a>
              </p>
           </div> <!-- .row -->

@@ -313,6 +313,24 @@ a {
 
 .navbar {
 
+  .navbar-brand {
+    .icon-wind {
+      color: darken(@color-white, 25%);
+    }
+    h4 {
+      color: lighten(@color-night, 35%);
+    }
+
+    &:hover {
+      .icon-wind {
+        color: darken(@color-white, 35%);
+      }
+      h4 {
+        color: lighten(@color-night, 25%);
+      }
+    }
+  }
+
   .nav {
 
     li {
@@ -320,6 +338,7 @@ a {
       a {
         strong {
           font-family: @font-family-brand;
+          font-weight: 400;
           text-transform: uppercase;
         }
         small {
@@ -516,6 +535,11 @@ a {
 
 #content {
   padding: 0;
+
+  @media (max-width: @screen-sm) {
+    margin-top: -15px;
+  }
+
 } // #content
 
 .page-content {
@@ -532,99 +556,9 @@ a {
 }
 
 
-// Locations
+// Contact
 // -------------------------------------------------
 
-#content {
-
-  .location-content {
-
-    .links {
-
-      a {
-        margin: 0;
-      }
-
-    }
-
-    .panel {
-
-      &:hover {
-        .opacity(0.5);
-      }
-
-      .panel-content {
-
-        h4 {
-          margin-top: 0;
-        }
-
-        address, p {
-          color: lighten(@color-black, 35%);
-        }
-
-      }
-
-    }
-
-    .sidebar {
-      position: relative;
-      top: 12px;
-
-      .hours p {
-        font-size: 15px;
-      }
-    }
-
-  }
-
-  .event {
-
-    h5 {
-      color: @color-white;
-      font-family: @font-family-serif;
-      font-weight: normal;
-      font-style: italic;
-      text-align: center;
-      text-transform: none;
-    }
-
-    h4 {
-      color: @color-white;
-      margin-top: 0;
-      padding: 30px 0;
-      text-align: center;
-      vertical-align: middle;
-    }
-  }
-
-  .event-content {
-
-    .links {
-
-      a {
-        margin: 0;
-      }
-
-    }
-
-    .event-single {
-
-      h2 {
-        margin-bottom: 0;
-      }
-
-      .lead {
-        color: lighten(@color-black, 50%);
-        font-size: 22px;
-        margin-top: 10px;
-      }
-
-    }
-
-  }
-
-}
 
 #contact {
 
