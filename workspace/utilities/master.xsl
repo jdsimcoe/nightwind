@@ -155,7 +155,7 @@
               <xsl:text>&#160;&#160;•&#160;&#160;Designed &amp; coded by </xsl:text>
               <a href="http://simko.io/"><strong>Simko.io</strong></a>
              </p>
-          </div>
+          </div> <!-- .row -->
 
         </div>
       </div><!-- .container -->
