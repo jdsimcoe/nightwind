@@ -610,7 +610,6 @@
 						$start->format('Y-m-d'),
 						array(
 							'iso' => $start->format('c'),
-							'timestamp' => $start->getTimestamp(),
 							'time' => $start->format('H:i'),
 							'weekday' => $start->format('N'),
 							'offset' => $start->format('O')
@@ -627,7 +626,6 @@
 							$end->format('Y-m-d'),
 							array(
 								'iso' => $end->format('c'),
-								'timestamp' => $end->getTimestamp(),
 								'time' => $end->format('H:i'),
 								'weekday' => $end->format('N'),
 								'offset' => $end->format('O')
@@ -742,9 +740,9 @@
 			$dates = array();
 			foreach($data as $range) {
 				$mode = $this->__getModeFromString($range);
-				$result = self::parseFilter($range);
+				self::parseFilter($range);
 
-				if($result !== FieldDate::ERROR && !empty($range)) {
+				if(!empty($range)) {
 					$range['mode'] = $mode;
 					$dates[] = $range;
 				}
@@ -829,8 +827,7 @@
 
 		public function getImportModes() {
 			return array(
-				'getPostdata' =>	ImportableField::ARRAY_VALUE,
-				'getString' =>		ImportableField::STRING_VALUE
+				'getPostdata' =>	ImportableField::ARRAY_VALUE
 			);
 		}
 
@@ -868,18 +865,6 @@
 					}
 
 					$data = $datetime;
-				}
-
-				return $this->processRawFieldData($data, $status, $message, true, $entry_id);
-			}
-			else if($mode === $modes->getString) {
-				$dates = explode(',', $data);
-				$data = array();
-				foreach($dates as $date_string) {
-					self::parseFilter($date_string);
-
-					$data['start'][] = $date_string['start'];
-					$data['end'][] = $date_string['end'];
 				}
 
 				return $this->processRawFieldData($data, $status, $message, true, $entry_id);

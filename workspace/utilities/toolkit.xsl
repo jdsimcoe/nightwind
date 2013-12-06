@@ -292,4 +292,19 @@ Global Pagination
 </xsl:template>
 
 
+<!--
+
+Live Reload
+
+-->
+
+<xsl:template name="livereload">
+
+  <xsl:if test="contains($root, '.dev')">
+    <script src="http://localhost:35729/livereload.js"></script>
+  </xsl:if>
+
+</xsl:template>
+
+
 </xsl:stylesheet>

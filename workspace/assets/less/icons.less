@@ -1,0 +1,26 @@
+// Import the fonts
+@font-face {
+  font-family: 'Nightwind';
+  src: url('../fonts/nightwind.eot');
+  src: url('../fonts/nightwind.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/nightwind.woff') format('woff'),
+       url('../fonts/nightwind.ttf') format('truetype'),
+       url('../fonts/nightwind.svg#Nightwind') format('svg');
+  font-style: normal;
+  font-weight: normal;
+}
+
+// Catchall baseclass
+[class^="icon-"]:before {
+  font-family: 'Nightwind';
+  font-style: normal;
+  line-height: 1;
+}
+
+.icon-medium {
+  font-size: 3.5em;
+}
+
+// Individual icons
+.icon-wind:before                         { content: "\e001"; }
+.icon-oregon:before                       { content: "\e003"; }
