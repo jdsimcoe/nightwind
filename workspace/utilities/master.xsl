@@ -41,7 +41,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
-    <meta name="author" content="Nate DeCoste / Nightwind Productions" />
+    <meta name="author" content="Nate DeCoste / NightWind Productions" />
     <meta name="responsimage" data-server="{$root}/image/2/width/height/anchor/0/uploads/images/filename" data-static="{$workspace}/assets/img/spacer.gif" data-loading="{$workspace}/assets/img/loading.gif" />
 
     <link href="{$workspace}/assets/css/main.css" rel="stylesheet" />
@@ -121,7 +121,7 @@
         <i class="glyphicon glyphicon-globe icon-medium"></i>
       </div>
       <h4>On the Web</h4>
-      <p class="lead"><em>The easiest way to stay up to date with Nightwind is via social networks. When you have a chance, check us out and stay “in the know”:</em></p>
+      <p class="lead"><em>The easiest way to stay up to date with Nightwind Productions is through social networks:</em></p>
       <p class="center links">
         <a href="#" target="_blank"><i class="icon-social-facebook"></i> Facebook</a>
         <a href="#" target="_blank"><i class="glyphicon glyphicon-camera"></i> Instagram</a>

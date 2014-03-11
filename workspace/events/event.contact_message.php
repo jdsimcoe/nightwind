@@ -7,7 +7,8 @@
 		public $ROOTELEMENT = 'contact-message';
 
 		public $eParamFILTERS = array(
-			'send-email'
+			'send-email',
+				'canofspam'
 		);
 
 		public static function about(){
@@ -18,7 +19,7 @@
 					'website' => 'http://nightwind.dev',
 					'email' => 'jonathan@simko.io'),
 				'version' => 'Symphony 2.3.4',
-				'release-date' => '2013-12-06T20:28:44+00:00',
+				'release-date' => '2014-03-11T21:22:11+00:00',
 				'trigger-condition' => 'action[contact-message]'
 			);
 		}
@@ -54,7 +55,7 @@
         <h3>Example Front-end Form Markup</h3>
         <p>This is an example of the form markup you can use on your frontend:</p>
         <pre class="XML"><code>&lt;form method="post" action="" enctype="multipart/form-data">
-  &lt;input name="MAX_FILE_SIZE" type="hidden" value="2097152" />
+  &lt;input name="MAX_FILE_SIZE" type="hidden" value="20971520" />
   &lt;label>Name
     &lt;input name="fields[name]" type="text" />
   &lt;/label>
@@ -105,7 +106,10 @@ send-email[recipient] // list of comma-separated author usernames.</code></pre>
       &lt;input name="send-email[recipient]" value="fred" type="hidden" />
       &lt;input id="submit" type="submit" name="action[save-contact-form]" value="Send" />
     &lt;/fieldset>
-  &lt;/form></code></pre>';
+  &lt;/form></code></pre>
+        <h3>Can Of Spam Filter</h3>
+        <p>To use the Can Of Spam filter, add the Can Of Spam event to your page and the following field to your form:</p>
+        <pre class="XML"><code>&lt;input name="canofspam" value="{$canofspam}" type="hidden" /></code></pre>';
 		}
 
 		public function load(){
