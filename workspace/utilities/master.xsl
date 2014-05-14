@@ -89,12 +89,6 @@
       </ul>
       <ul class="nav nav-pills pull-right hidden-xs">
         <xsl:apply-templates select="data/navigation-primary/page" />
-<!--         <li>
-          <a href="#" target="_blank">
-            <strong>Store</strong>
-            <small>shop our stuff</small>
-          </a>
-        </li> -->
         <xsl:if test="$cookie-username">
           <li class="dropdown">
             <a href="/symphony/">
@@ -123,8 +117,8 @@
       <h4>On the Web</h4>
       <p class="lead"><em>The easiest way to stay up to date with Nightwind Productions is through social networks:</em></p>
       <p class="center links">
-        <a href="#" target="_blank"><i class="icon-social-facebook"></i> Facebook</a>
-        <a href="#" target="_blank"><i class="glyphicon glyphicon-camera"></i> Instagram</a>
+        <a href="{$main-facebook}" target="_blank"><i class="icon-social-facebook"></i> Facebook</a>
+        <a href="{$main-instagram}" target="_blank"><i class="glyphicon glyphicon-camera"></i> Instagram</a>
         <a href="https://twitter.com/nightwindprodux" target="_blank"><i class="icon-social-twitter"></i> Twitter</a>
       </p>
     </div>
