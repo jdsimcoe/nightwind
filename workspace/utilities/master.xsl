@@ -51,18 +51,17 @@
     <script type="text/javascript" src="//use.typekit.net/mix2ean.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     <script type="text/javascript" src="{$workspace}/assets/js/application.min.js"></script>
-
-<!--     <script type="text/javascript">
+    <script>
       <xsl:comment>
-        var _gaq=[["_setAccount","34987"],["_trackPageview"]];
-        (function(d,t){
-          var g=d.createElement(t), s=d.getElementsByTagName(t)[0];
-          g.async=1;
-            g.src=("https:"==location.protocol?"//ssl":"//www")+".google-analytics.com/ga.js";
-            s.parentNode.insertBefore(g,s)
-        }(document,"script"));
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-4548059-9', 'auto');
+      ga('send', 'pageview');
       </xsl:comment>
-    </script> -->
+    </script>
 
   </head>
 
@@ -120,6 +119,7 @@
         <a href="{$main-facebook}" target="_blank"><i class="icon-social-facebook"></i> Facebook</a>
         <a href="{$main-instagram}" target="_blank"><i class="glyphicon glyphicon-camera"></i> Instagram</a>
         <a href="https://twitter.com/nightwindprodux" target="_blank"><i class="icon-social-twitter"></i> Twitter</a>
+        <a href="http://eepurl.com/Vuz6v" target="_blank"><i class="glyphicon glyphicon-email"></i> Newsletter</a>
       </p>
     </div>
 
