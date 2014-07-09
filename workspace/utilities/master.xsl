@@ -119,7 +119,7 @@
         <a href="{$main-facebook}" target="_blank"><i class="icon-social-facebook"></i> Facebook</a>
         <a href="{$main-instagram}" target="_blank"><i class="glyphicon glyphicon-camera"></i> Instagram</a>
         <a href="https://twitter.com/nightwindprodux" target="_blank"><i class="icon-social-twitter"></i> Twitter</a>
-        <a href="http://eepurl.com/Vuz6v" target="_blank"><i class="glyphicon glyphicon-email"></i> Newsletter</a>
+        <a href="http://eepurl.com/Vuz6v" target="_blank"><i class="glyphicon glyphicon-envelope"></i> Newsletter</a>
       </p>
     </div>
 
