@@ -4,7 +4,7 @@
 
 <xsl:template name="contact-form">
 
-  <form class="form-horizontal" role="form" method="post" action="?debug">
+  <form class="form-horizontal" role="form" method="post" action="">
     <xsl:for-each select="/data/events/contact-message">
       <div>
         <xsl:attribute name="class">
