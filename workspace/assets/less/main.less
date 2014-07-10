@@ -418,7 +418,7 @@ a {
 #content {
   width: 60%;
   margin: 0 auto;
-  padding: 60px 0 40px 0;
+  padding: 40px 0;
 
   @media (max-width: @screen-lg) {
     width: 75%;
@@ -428,9 +428,27 @@ a {
     width: 90%;
   }
 
-  p {
+  p,
+  ul,
+  ul li,
+  ol,
+  ol li,
+  dt,
+  dd {
     font-size: 2rem;
+  }
+
+  p {
     padding-bottom: 20px;
+
+    a:hover {
+      border-bottom: 2px solid lighten(@link-color, 40%);
+    }
+  }
+
+  ul li,
+  ol li {
+    padding-bottom: 10px;
   }
 
   .alert p {
