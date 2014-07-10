@@ -2,33 +2,31 @@
 <xsl:stylesheet version="1.0"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-
 <xsl:include href="../utilities/master.xsl"/>
 
 
 <xsl:template match="data">
-
-  <xsl:if test="string-length(events-latest/entry)">
-
-    <div class="blank-bar">
-      <div class="center">
-        <i class="icon-grinder icon-medium"></i>
-      </div>
-      <h4>Upcoming Events</h4>
-
-      <div class="container">
-        <div class="row">
-          <xsl:apply-templates select="events-latest/entry" mode="main"/>
-        </div>
-      </div>
-
-      <br/><br/>
-
-    </div>
-
-  </xsl:if>
+  <xsl:choose>
+    <xsl:when test="count(structure-url/entry)">
+      <xsl:apply-templates select="structure-url/entry" mode="main"/>
+    </xsl:when>
+    <xsl:otherwise>
+      <xsl:call-template name="error"/>
+    </xsl:otherwise>
+  </xsl:choose>
+</xsl:template>
 
 
+<xsl:template match="structure-url/entry" mode="main">
+  <xsl:choose>
+    <xsl:when test="slug/@handle = 'contact'">
+      <xsl:value-of select="content" disable-output-escaping="yes" />
+      <xsl:call-template name="contact-form" />
+    </xsl:when>
+    <xsl:otherwise>
+      <xsl:value-of select="content" disable-output-escaping="yes" />
+    </xsl:otherwise>
+  </xsl:choose>
 </xsl:template>
 
 
