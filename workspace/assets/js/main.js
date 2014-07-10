@@ -1,9 +1,5 @@
   $(document).ready(function () {
 
-    // $(".navbar-toggle").click(function() {
-
-    // });
-
     $('.navbar-collapse').on('show.bs.collapse', function() {
       $(".dropdown-normal").addClass("open");
     });
@@ -19,5 +15,7 @@
     $('.navbar-nav li.dropdown').mouseout(function() {
       $(this).removeClass("open");
     });
+
+    $('#content').fitVids();
 
   });

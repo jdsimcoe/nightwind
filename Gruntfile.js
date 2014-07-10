@@ -48,7 +48,7 @@ module.exports = function (grunt) {
           'workspace/assets/js/jquery.js',
           'workspace/assets/bootstrap/dist/js/bootstrap.min.js',
           'workspace/assets/js/responsimage.js',
-          // 'workspace/assets/js/fitvids.js',
+          'workspace/assets/js/fitvids.js',
           'workspace/assets/js/main.js'],
         dest: 'workspace/assets/js/application.js'
       }
