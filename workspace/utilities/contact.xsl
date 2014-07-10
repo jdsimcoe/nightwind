@@ -4,7 +4,7 @@
 
 <xsl:template name="contact-form">
 
-  <form class="form-horizontal" role="form" method="post" action="">
+  <form class="form-horizontal" role="form" method="post" action="?debug">
     <xsl:for-each select="/data/events/contact-message">
       <div>
         <xsl:attribute name="class">
@@ -198,7 +198,7 @@
           </xsl:otherwise>
         </xsl:choose>
       </xsl:attribute>
-      <label class="col-lg-2 control-label" for="fields-message">My Message:</label>
+      <label class="col-lg-2 control-label" for="fields-message">Message:</label>
       <div class="col-lg-9">
         <textarea class="form-control" name="fields[content]" rows="15">
           <xsl:if test="/data/events/contact-message/post-values/content">
