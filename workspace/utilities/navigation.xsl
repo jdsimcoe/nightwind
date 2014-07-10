@@ -63,6 +63,8 @@
       <xsl:if test="@id = /data/structure-navigation/entry/parent/item/@id">
         <ul class="dropdown-menu">
           <xsl:for-each select="/data/structure-navigation/entry[parent/item/@id = $parent-id]">
+            <xsl:variable name="child-id" select="@id" />
+<!--             <h2><xsl:value-of select="$child-id"/></h2> -->
             <li>
               <xsl:if test="slug = $pt2">
                 <xsl:attribute name="class">
@@ -72,6 +74,22 @@
               <a href="{$root}{path}">
                 <xsl:value-of select="title"/>
               </a>
+              <xsl:if test="@id = /data/structure-navigation/entry/parent/item/@id">
+                <ul class="sub-drop">
+                  <xsl:for-each select="/data/structure-navigation/entry[parent/item/@id = $child-id]">
+                    <li>
+                      <xsl:if test="slug = $pt3">
+                        <xsl:attribute name="class">
+                          <xsl:text>active</xsl:text>
+                        </xsl:attribute>
+                      </xsl:if>
+                      <a href="{$root}{path}">
+                        <xsl:value-of select="title"/>
+                      </a>
+                    </li>
+                  </xsl:for-each>
+                </ul>
+              </xsl:if>
             </li>
           </xsl:for-each>
         </ul>
