@@ -4,6 +4,8 @@ workspace/uploads/images/*.jpg
 workspace/uploads/images/*.jpeg
 workspace/uploads/images/*.png
 workspace/uploads/images/*.gif
+sql/
+manifest/config.php
 manifest/cache/*
 manifest/logs/*
 manifest/tmp/*
