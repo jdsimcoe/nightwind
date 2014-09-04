@@ -215,9 +215,8 @@
     </div>
 
     <input name="fields[date][start][]" value="{$this-month}/{$this-day}/{$this-year}" type="hidden" />
-
-    <input name="send-email[sender-email]" value="fields[email]" type="hidden" />
-    <input name="send-email[sender-name]" value="{$website-name}" type="hidden" />
+    <input name="send-email[sender-email]" value="nate@nightwind.co" type="hidden" />
+    <input name="send-email[sender-name]" value="Nate DeCoste" type="hidden" />
     <input name="send-email[reply-to-email]" value="fields[email]" type="hidden" />
     <input name="send-email[reply-to-name]" value="fields[name]" type="hidden" />
     <input name="send-email[subject]" value="fields[inquiry]" type="hidden" />
