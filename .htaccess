@@ -23,8 +23,7 @@ php_value memory_limit 1000M
   </FilesMatch>
 </IfModule>
 
-
-# ----------------------------------------------------------------------
+	# ----------------------------------------------------------------------
 # CORS-enabled images (@crossorigin)
 # ----------------------------------------------------------------------
 
@@ -62,8 +61,7 @@ php_value memory_limit 1000M
 # Proper MIME type for all files
 # ----------------------------------------------------------------------
 
-
-# JavaScript
+	# JavaScript
 #   Normalize to standard type (it's sniffed in IE anyways)
 #   tools.ietf.org/html/rfc4329#section-7.2
 AddType application/javascript         js
@@ -101,8 +99,7 @@ AddType application/octet-stream            safariextz
 AddType application/x-web-app-manifest+json webapp
 AddType text/x-vcard                        vcf
 
-
-# ----------------------------------------------------------------------
+	# ----------------------------------------------------------------------
 # Gzip compression
 # ----------------------------------------------------------------------
 
@@ -150,8 +147,7 @@ AddType text/x-vcard                        vcf
 
 </IfModule>
 
-
-# ----------------------------------------------------------------------
+	# ----------------------------------------------------------------------
 # Expires headers (for better cache control)
 # ----------------------------------------------------------------------
 
@@ -214,8 +210,7 @@ AddType text/x-vcard                        vcf
 
 </IfModule>
 
-
-# ----------------------------------------------------------------------
+	# ----------------------------------------------------------------------
 # ETag removal
 # ----------------------------------------------------------------------
 
@@ -229,8 +224,7 @@ AddType text/x-vcard                        vcf
 #   developer.yahoo.com/performance/rules.html#etags
 FileETag None
 
-
-# ----------------------------------------------------------------------
+	# ----------------------------------------------------------------------
 # Suppress "www." at the beginning of URLs
 # ----------------------------------------------------------------------
 
@@ -254,15 +248,13 @@ FileETag None
 
 </IfModule>
 
-
-# ----------------------------------------------------------------------
+	# ----------------------------------------------------------------------
 # Symphony 2.3.x
 # ----------------------------------------------------------------------
 
 Options +FollowSymlinks -Indexes
 
-
-<IfModule !mod_rewrite.c>
+	<IfModule !mod_rewrite.c>
   SetEnv HTTP_MOD_REWRITE No
 </IfModule>
 
@@ -282,9 +274,11 @@ Options +FollowSymlinks -Indexes
   RewriteCond %{REQUEST_FILENAME} favicon.ico [NC]
   RewriteRule .* - [S=14]
 
-  ### IMAGE RULES
-  RewriteRule ^image\/(.+\.(jpg|gif|jpeg|png|bmp))$ extensions/jit_image_manipulation/lib/image.php?param=$1 [L,NC]
+  
+	### IMAGE RULES
+	RewriteRule ^image\/(.+)$ extensions/jit_image_manipulation/lib/image.php?param=$1 [B,L,NC]
 
+	  
   ### CHECK FOR TRAILING SLASH - Will ignore files
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_URI} !/$
@@ -309,13 +303,11 @@ Options +FollowSymlinks -Indexes
 
 </IfModule>
 
-
-# ----------------------------------------------------------------------
+	# ----------------------------------------------------------------------
 # Block Bad Bots
 # ----------------------------------------------------------------------
 
-
-<IfModule !mod_rewrite.c>
+	<IfModule !mod_rewrite.c>
   SetEnv HTTP_MOD_REWRITE No
 </IfModule>
 
