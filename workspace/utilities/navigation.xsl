@@ -19,6 +19,9 @@
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
           <xsl:apply-templates select="entry" mode="nav"/>
+          <li>
+            <a href="http://store.nightwind.co/">Store</a>
+          </li>
           <xsl:if test="$cookie-username">
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-wrench"></i></a>
